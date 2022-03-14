@@ -1,0 +1,26 @@
+{
+  "admin": {
+    "login": "admin",
+    "password": "admin"
+  },
+  "users": [
+    {
+      "name": "Антон",
+      "email": "hjjhjy@tt.com",
+      "phone": "+7 (555) 555-5555",
+      "id": 1
+    },
+    {
+      "name": "Андрей",
+      "email": "ggttt@gmail.com",
+      "phone": "+7 (657) 676 77 77",
+      "id": 2
+    },
+    {
+      "name": "Василий",
+      "email": "kfffffaa@mail.ru",
+      "phone": "+6 (969) 496 94 99",
+      "id": 3
+    }
+  ]
+}
