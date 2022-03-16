@@ -36,21 +36,21 @@ const AddNewUser = () => {
             onSubmit={handleSubmit}>
                 <div className="flex w-full justify-between flex-wrap">
                     <input
-                    className="p-2 border-b-2 w-60 mb-3" 
+                    className="p-2 border-b-2 w-60 mb-3 rounded-md" 
                     type="text" 
                     name="name" 
                     placeholder="Имя"
                     value={name}
                     onChange={inputChange}/>
                     <input 
-                    className="p-2 border-b-2 w-60 mb-3" 
+                    className="p-2 border-b-2 w-60 mb-3 rounded-md" 
                     type="email" 
                     name="email" 
                     placeholder="Почта"
                     value={email}
                     onChange={inputChange}/>
                     <input
-                    className="p-2 border-b-2 w-60 mb-3"  
+                    className="p-2 border-b-2 w-60 mb-3 rounded-md"  
                     type="text" 
                     name="phone" 
                     placeholder="Телефон"
@@ -58,7 +58,9 @@ const AddNewUser = () => {
                     onChange={inputChange}/>
                     <button 
                     type="submit"
-                    className="bg-slate-200 p-2 mb-3 hover:bg-slate-300 transition-all duration-300 ease-in-out">Добавить</button>
+                    className="bg-slate-200 p-2 mb-3 hover:bg-slate-300 transition-all duration-300 ease-in-out rounded-md">
+                        Добавить
+                    </button>
                 </div>
             </form>
             {err && <h3 className="mb-3 text-red-500">{err}</h3>}

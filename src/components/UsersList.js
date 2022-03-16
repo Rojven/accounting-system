@@ -31,13 +31,13 @@ const UsersList = ({ popUpForm, setPopUpForm }) => {
     })
 
     return (
-        <table className="w-full ">
-            <thead className="bg-slate-200">
+        <table className="w-full rounded-md">
+            <thead className="bg-slate-200 rounded-md">
                 <tr>
-                    <th>Имя</th>
+                    <th className="rounded-l-md">Имя</th>
                     <th>Почта</th>
                     <th>Номер телефона</th>
-                    <th className="py-4">Действия</th>
+                    <th className="py-4 rounded-r-md">Действия</th>
                 </tr>
             </thead>
             <tbody className="text-center">

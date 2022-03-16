@@ -37,7 +37,7 @@ const UsersListItem = ({ name, phone, email, id, popUpForm, setPopUpForm }) => {
         return (
             <td 
             key={i}
-            className="border-b-2 py-3">
+            className="border-b-2 py-">
                 {elName}
             </td>
         )
@@ -52,7 +52,7 @@ const UsersListItem = ({ name, phone, email, id, popUpForm, setPopUpForm }) => {
             key={i}
             className='group px-2 relative'>
                 {icon}
-                <span className='hidden absolute bg-slate-100 p-1 rounded-md group-hover:block'>
+                <span className='hidden absolute bg-slate-200 p-1 rounded-md group-hover:block'>
                     {message}
                 </span>
             </button>
@@ -61,7 +61,7 @@ const UsersListItem = ({ name, phone, email, id, popUpForm, setPopUpForm }) => {
 
     return (
         <>
-            <tr>
+            <tr className='bg-white'>
                 {elems}
                 <td className="border-b-2 py-3">
                     {buttons}

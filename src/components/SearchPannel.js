@@ -22,7 +22,7 @@ const SearchPannel = () => {
             type="text" 
             name="search"
             placeholder="Поиск..."
-            className="w-full p-2 border-b-2 mb-3"
+            className="w-full p-2 border-b-2 mb-3 rounded-md"
             value={search}
             onChange={(e) => setSearch(e.target.value)}/>
         </form>

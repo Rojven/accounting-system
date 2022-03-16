@@ -6,10 +6,11 @@ import './App.css';
 const App = () => {
 
   let user = false;
-
+  
   const navigate = useNavigate();
   
   useEffect(() => {
+    
     if(!user) navigate('/login')
   }, [])
 

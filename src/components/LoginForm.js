@@ -25,7 +25,7 @@ const LoginForm = ({ user }) => {
     
     if(loginState === login && passwordState === password) {
         user = true;
-    } 
+    }  
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -33,7 +33,6 @@ const LoginForm = ({ user }) => {
             setErr(true);
         }
         if(user) navigate('/')
-        
     }
 
     const message = err ? <div className="text-red-500">Неверный логин или пароль!</div> : null;
@@ -47,19 +46,19 @@ const LoginForm = ({ user }) => {
             <input 
             type='text' 
             placeholder='Логин' 
-            className='p-2 border-b-2 w-60 mb-3'
+            className='p-2 border-b-2 w-60 mb-3 rounded-md'
             name='login'
             value={loginState}
             onChange={(e) => setLoginState(e.target.value)}/> 
             <input 
             type='password' 
             placeholder='Пароль' 
-            className='p-2 border-b-2 w-60 mb-3'
+            className='p-2 border-b-2 w-60 mb-3 rounded-md'
             name='password'
             value={passwordState}
             onChange={(e) => setPasswordState(e.target.value)}/> 
             <button 
-            className='bg-slate-200 p-2 mb-3 hover:bg-slate-300 transition-all duration-300 ease-in-out'
+            className='bg-slate-200 p-2 mb-3 rounded-md hover:bg-slate-300 transition-all duration-300 ease-in-out'
             type='submit'>
                 Войти
             </button>

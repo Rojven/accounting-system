@@ -32,26 +32,26 @@ const EditUser = ({ setPopUpForm }) => {
             onSubmit={handleSubmit}>
                 <div className="flex w-full justify-between flex-wrap">
                     <input
-                    className="p-2 border-b-2 w-60 mb-3" 
+                    className="p-2 border-b-2 w-60 mb-3 rounded-md" 
                     type="text" 
                     name="name" 
                     value={name || ''}
                     onChange={inputChange}/>
                     <input 
-                    className="p-2 border-b-2 w-60 mb-3" 
+                    className="p-2 border-b-2 w-60 mb-3 rounded-md" 
                     type="email" 
                     name="email" 
                     value={email  || ''}
                     onChange={inputChange}/>
                     <input
-                    className="p-2 border-b-2 w-60 mb-3"  
+                    className="p-2 border-b-2 w-60 mb-3 rounded-md"  
                     type="text" 
                     name="phone" 
                     value={phone  || ''}
                     onChange={inputChange}/>
                     <button 
                     type="submit"
-                    className="bg-slate-200 p-2 mb-3 hover:bg-slate-300 transition-all duration-300 ease-in-out">
+                    className="bg-slate-200 p-2 mb-3 hover:bg-slate-300 transition-all duration-300 ease-in-out rounded-md">
                         Сохранить
                     </button>
                 </div>
